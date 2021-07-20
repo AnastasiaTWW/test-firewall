@@ -20,7 +20,7 @@ jobs:
     steps:
     - name: Github REST API Call
       env:
-        CI_TOKEN: ${{ secrets.CI_TOKEN }}
+        CI_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         PARENT_REPO: AnastasiaTWW/test-docs
         PARENT_BRANCH: master
         WORKFLOW_ID: 11467734
